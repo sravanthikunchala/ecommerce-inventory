@@ -1,0 +1,35 @@
+
+# Dependencies
+**/node_modules/
+**/venv/
+**/.venv/
+**/pav_env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+**/__pycache__/
+*.py[cod]
+
+# Logs
+**/logs/
+*.log
+*.pid
+
+# Build files
+**/build/
+**/dist/
+
+# Git metadata
+**/.git/
+
+# Local databases and uploaded data
+*.sqlite3
+**/private_uploads/
+
+# Operating system
+.DS_Store
+Thumbs.db

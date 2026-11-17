@@ -1,0 +1,84 @@
+
+.po-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.po-modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 380px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.po-modal-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #3a3a98;
+  font-weight: 600;
+}
+
+.po-modal-content p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.po-modal-field {
+  margin-bottom: 16px;
+}
+
+.po-modal-field label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #334155;
+      text-align: left;
+    font-weight: 600;
+}
+
+.po-modal-field input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.po-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  button{
+  font-weight: 600;
+
+  }
+}
+
+.po-modal-cancel-btn {
+  background-color: #e2e8f0;
+  color: #1e293b;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+}
+
+.po-modal-cancel-btn:hover {
+  background-color: #cbd5e1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

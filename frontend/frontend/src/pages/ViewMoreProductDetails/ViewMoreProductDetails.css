@@ -1,0 +1,1089 @@
+.container {
+    font-family: "Inter";
+    font-style: normal;
+    line-height: normal;
+    color: #000;
+    margin-top: 20px;
+
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-product-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail-img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-img:hover {
+    transform: scale(1.1);
+}
+
+
+.product-info-top-section {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.view-product-header {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #4F4892;
+    text-transform: capitalize;
+}
+
+.view-product-header span {
+    color: #4F4892;
+}
+
+.view-product-name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #495057;
+    text-transform: capitalize;
+}
+
+.view-product-price {
+    color: #4F4892;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.view-product-sku,
+.view-product-hsn,
+.view-product-category,
+.view-product-quantity,
+.view-product-availability,.view-product-discount {
+    font-size: 18px;
+    font-weight: 400;
+    color: #495057;
+}
+
+.view-product-quantity,
+.view-product-availability {
+    margin-bottom: 20px;
+}
+
+.product-info-bottom-section {
+    border-top: 3px solid #4F4892;
+}
+
+.parrow {
+    color: #4F4892;;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background: none;
+    font-size: 32px;
+}
+
+.parrow:hover{
+    background: none;
+    border: none;
+}
+
+.tabs {
+    margin-top: 40px;
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.button-tab,
+.button-tab-active {
+    border: none;
+    background: none;
+    text-transform: capitalize;
+    color: #4F4892;
+}
+
+.button-tab-active {
+    background-color: #4F4892;
+    color: white;
+    border-radius: 20px;
+    width: 25%;
+    height: 50px;
+}
+
+.button-material {
+    border: none;
+    width: 150px;
+    height: 54px;
+    border-radius: 20px;
+    background: #4F4892;
+}
+
+.button-material a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tab-content {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.specifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.specification-item {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    border: 1px solid #4F4892;
+    border-bottom: 1px solid #4F4892;
+    width: 600px;
+}
+.specification-item strong{
+    color: #4F4892;
+    text-transform: capitalize;
+}
+.specification-buttons,.specification-actions,.specification-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-specification,.add-specification-btn,.edit-specification-btn,
+.add-submit-btn,.add-cancel-btn,
+.edit-submit-btn,.edit-cancel-btn {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4F4892;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.specifications-container {
+    border: 2px solid #4F4892;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.add-specifications,.edit-specifications{
+    border: 1px dashed #4F4892;
+}
+
+.add-specifications-header,.edit-specifications-header{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4F4892;
+}
+.specification-counter{
+    margin-bottom: 20px;
+}
+
+.btn-count{
+    border-radius: 20px;
+    border: 0.5px solid #000;
+}
+.btn-count,.btn-count-num{
+    margin-left: 10px;
+
+}
+
+.specification-input-placeholder{
+    height: 50px;
+    border-radius: 20px;
+    border: 0.25px solid #000;
+    margin-bottom: 20px;
+}
+
+.edit-specifications .specification-input{
+    margin-top: 10px;
+}
+
+.edit-specifications .specification-input input{
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 0.25px solid #4F4892;
+    color: #000;
+    text-transform: capitalize;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+.description-tab {
+    text-align: left;
+    line-height: 1.8;
+    color: #374151;
+}
+
+.description-paragraph {
+    margin-bottom: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+@media (max-width: 768px) {
+    .description-paragraph {
+        text-align: left;
+        line-height: 1.6;
+    }
+}
+
+
+.specification-input {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.add-submit-btn,.add-cancel-btn{
+    width: 150px;
+}
+
+.specifications-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin: 10px auto; 
+    text-align: center; 
+}
+
+.specifications-table th,
+.specifications-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.specifications-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.specifications-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.existing-specifications-title{
+    font-size: 18px;
+    color: #4F4892;
+}
+
+.arrows-div{
+    display: flex
+}
+
+.full-page-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+
+
+.delete-specification-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.delete-specification-btn:hover {
+  background-color: #c82333;
+}
+
+.delete-specification-btn:disabled {
+  background-color: #e0a3aa;
+  cursor: not-allowed;
+}
+
+
+.delete-specifications {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-specifications-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #dc3545;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-icon {
+  font-size: 22px;
+}
+
+.delete-select-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.checkbox-label-vm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label-vm input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.selected-count {
+  background: #dc3545;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.specifications-to-delete {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.specification-delete-item {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.specification-delete-item:hover {
+  background-color: #f8f9fa;
+}
+
+.specification-delete-item:last-child {
+  border-bottom: none;
+}
+
+.spec-details-vm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-name-vm {
+  font-weight: 600;
+  color: #333;
+  word-break: break-word;
+}
+
+.spec-value-vm {
+  color: #666;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.delete-specifications-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.cancel-delete-btn {
+  padding: 10px 25px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.cancel-delete-btn:hover {
+  background: #5a6268;
+}
+
+.proceed-delete-btn {
+  padding: 10px 25px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.proceed-delete-btn:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.proceed-delete-btn:disabled {
+  background: #e0a3aa;
+  cursor: not-allowed;
+}
+
+
+.delete-confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.delete-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: modalSlideIn 0.3s ease-out;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delete-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #dc3545;
+}
+
+.delete-icon-large {
+  font-size: 32px;
+}
+
+.delete-modal-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.delete-modal-body {
+  margin-bottom: 25px;
+}
+
+.delete-modal-body p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.selected-specs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.selected-spec-tag {
+  background: #dc3545;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+.delete-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.confirm-delete-btn {
+  padding: 12px 30px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+
+.confirm-delete-btn:hover:not(:disabled) {
+  background: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.confirm-delete-btn:disabled {
+  background: #e0a3aa;
+  cursor: not-allowed;
+}
+
+
+.specification-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+
+.specifications-to-delete::-webkit-scrollbar {
+  width: 6px;
+}
+
+.specifications-to-delete::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+.specifications-to-delete::-webkit-scrollbar-thumb {
+  background: #dc3545;
+  border-radius: 20px;
+}
+
+.specifications-to-delete::-webkit-scrollbar-thumb:hover {
+  background: #c82333;
+}
+
+.selected-specs-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.selected-specs-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+.selected-specs-list::-webkit-scrollbar-thumb {
+  background: #dc3545;
+  border-radius: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .delete-specifications {
+    padding: 25px;
+  }
+  
+  .specifications-to-delete {
+    max-height: 350px;
+  }
+  
+  .delete-modal-content {
+    max-width: 550px;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .delete-specifications {
+    padding: 18px;
+  }
+  
+  .delete-modal-content {
+    max-width: 450px;
+    padding: 25px;
+  }
+  
+  .delete-modal-header h3 {
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .delete-specifications-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .delete-select-all {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .selected-count {
+    align-self: flex-end;
+  }
+  
+  .specifications-to-delete {
+    max-height: 250px;
+  }
+  
+  .delete-specifications-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cancel-delete-btn,
+  .proceed-delete-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .delete-modal-content {
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .delete-modal-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .delete-icon-large {
+    font-size: 28px;
+  }
+  
+  .delete-modal-header h3 {
+    font-size: 20px;
+  }
+  
+  .delete-modal-actions {
+    flex-direction: column;
+  }
+  
+  .cancel-delete-btn,
+  .confirm-delete-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  
+
+  .specification-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .add-specification-btn,
+  .edit-specification-btn,
+  .delete-specification-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .delete-specifications {
+    padding: 15px;
+    margin: 0 -10px;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+  
+  .delete-specifications-header {
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .delete-icon {
+    font-size: 20px;
+  }
+  
+  .spec-details-vm {
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .spec-name-vm {
+    font-size: 14px;
+  }
+  
+  .spec-value-vm {
+    font-size: 12px;
+  }
+  
+  .specification-delete-item {
+    padding: 10px;
+  }
+  
+  .delete-modal-content {
+    padding: 15px;
+    max-width: 95%;
+    max-height: 95vh;
+  }
+  
+  .delete-modal-body p {
+    font-size: 14px;
+  }
+  
+  .selected-spec-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+  
+  .confirm-delete-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+  
+ 
+  .checkbox-label-vm input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .delete-specifications {
+    padding: 12px;
+  }
+  
+  .delete-select-all {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  .selected-count {
+    align-self: center;
+    font-size: 12px;
+  }
+  
+  .specifications-to-delete {
+    max-height: 200px;
+    padding: 8px;
+  }
+  
+  .checkbox-label-vm {
+    gap: 8px;
+  }
+  
+  .specification-delete-item {
+    padding: 8px;
+  }
+  
+  .delete-specifications-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  
+  .cancel-delete-btn,
+  .proceed-delete-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  .delete-modal-content {
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .delete-modal-header h3 {
+    font-size: 18px;
+  }
+  
+  .delete-icon-large {
+    font-size: 24px;
+  }
+  
+  .selected-specs-list {
+    max-height: 100px;
+    padding: 8px;
+    gap: 6px;
+  }
+  
+  .delete-modal-actions {
+    gap: 10px;
+  }
+  
+ 
+  .specification-actions {
+    gap: 10px;
+  }
+  
+  .delete-specification-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 374px) {
+  .delete-specifications-header {
+    font-size: 15px;
+  }
+  
+  .delete-select-all {
+    font-size: 14px;
+  }
+  
+  .checkbox-label-vm {
+    font-size: 14px;
+  }
+  
+  .spec-name-vm {
+    font-size: 13px;
+  }
+  
+  .spec-value-vm {
+    font-size: 11px;
+  }
+  
+  .cancel-delete-btn,
+  .proceed-delete-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .delete-modal-content {
+    padding: 12px;
+  }
+  
+  .delete-modal-header h3 {
+    font-size: 16px;
+  }
+  
+  .delete-modal-body p {
+    font-size: 13px;
+  }
+  
+  .confirm-delete-btn {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+  
+  .selected-spec-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
+
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .delete-confirmation-modal {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  
+  .delete-modal-content {
+    max-height: 85vh;
+    margin-top: 20px;
+  }
+  
+  .specifications-to-delete {
+    max-height: 150px;
+  }
+  
+  .selected-specs-list {
+    max-height: 80px;
+  }
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+  .delete-specification-btn,
+  .cancel-delete-btn,
+  .proceed-delete-btn,
+  .confirm-delete-btn {
+    border: 1px solid transparent;
+  }
+  
+  .delete-modal-content {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media print {
+  .delete-confirmation-modal,
+  .delete-specification-btn,
+  .proceed-delete-btn,
+  .confirm-delete-btn {
+    display: none !important;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .delete-specification-btn,
+  .cancel-delete-btn,
+  .proceed-delete-btn,
+  .confirm-delete-btn {
+    transition: none;
+  }
+  
+  .delete-modal-content {
+    animation: none;
+  }
+  
+  .specification-delete-item {
+    transition: none;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .delete-specifications {
+    background: #2d2d2d;
+    color: #ffffff;
+  }
+  
+  .delete-select-all {
+    background: #3a3a3a;
+  }
+  
+  .specifications-to-delete {
+    border-color: #444;
+  }
+  
+  .specification-delete-item {
+    border-bottom-color: #444;
+  }
+  
+  .specification-delete-item:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .spec-name-vm {
+    color: #ffffff;
+  }
+  
+  .spec-value-vm {
+    color: #cccccc;
+  }
+  
+  .delete-modal-content {
+    background: #2d2d2d;
+    color: #ffffff;
+  }
+  
+  .delete-modal-body p {
+    color: #cccccc;
+  }
+  
+  .selected-specs-list {
+    background: #3a3a3a;
+  }
+  
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  .delete-specification-btn,
+  .cancel-delete-btn,
+  .proceed-delete-btn,
+  .confirm-delete-btn {
+    min-height: 44px;
+    padding: 12px 20px;
+  }
+  
+  .checkbox-label-vm input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .specification-delete-item {
+    padding: 15px;
+  }
+  
+  .delete-modal-actions {
+    gap: 20px;
+  }
+}

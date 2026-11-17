@@ -1,0 +1,127 @@
+.roles-container {
+    padding: 20px;
+}
+
+.roles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roles-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #4450A2;
+}
+
+.add-btn {
+    padding: 8px 14px;
+    background: #4450A2;
+    border: none;
+    color: white;
+
+    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+
+.role-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.role-popup-box {
+    background: white;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.role-popup-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #4450A2;
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.role-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.role-form-row div {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    text-align: left;
+}
+
+.form-container label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4450A2;
+}
+
+.required {
+    color: red;
+    font-weight: 600;
+}
+
+.form-container input,
+.form-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    height: 50px;
+    width: 80%;
+
+}
+
+.role-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.role-cancel-btn {
+    padding: 8px 14px;
+    background: #6c757d;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.submit-btn {
+    padding: 8px 14px;
+    background: #4450A2;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.role-table-container{
+    margin-top: 10px;
+}

@@ -1,0 +1,142 @@
+.sin-footer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.sin-dmrr-container {
+    max-width: 1220px;
+    margin-left: 250px;
+    
+
+}
+
+.role-popup{
+    position: fixed;
+    z-index: 99999;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    
+}
+
+.required-asterisk {
+  color: red;
+}
+
+@media (max-width: 1440px) {
+    .sin-dmrr-container {
+        width: 82%;
+    }
+    .role-profile-icon{
+        margin-left: 1200px;
+    }
+}
+@media (max-width: 1024px) {
+    .sin-dmrr-container {
+        width: 75%;
+    }
+    .role-profile-icon{
+        margin-left: 780px;
+    }
+}
+
+.dmrr-no-permission{
+    font-size: 10px;
+    margin-top: 30px;
+background-color: #f2f9f9;
+  color: #3a3a98;
+  border-radius: 10px;
+   width: 60%;
+  margin: 40px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1)
+}
+
+.no-permission-heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.issue-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.issue-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.issue-modal h3 {
+  margin-bottom: 10px;
+}
+
+.issue-modal input {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.issue-balance-btn {
+    background-color: #3a3a98;
+    color:white;
+    border: none;
+    border-radius: 4px;
+}
+.sin-modal-header{
+    color: #3a3a98;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;  
+}
+.sin-model-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.sin-model-buttons button {
+    background: #4450a2;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.sin-model-buttons button:last-child {
+    background: #d1d5db;
+    color: #333;
+}
+
+.sin-dash{
+    color: #888;
+    font-weight: bold;
+    
+}

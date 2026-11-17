@@ -1,0 +1,34 @@
+.confirmed-address-section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.change-address-btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-address-btn-co{
+        display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: #4450A2;
+    border: 2px solid #4450A2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}

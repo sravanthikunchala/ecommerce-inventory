@@ -1,0 +1,593 @@
+
+.dmrr-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.dmrr-table-header {
+  background: #4450A2;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dmrr-table-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dmrr-table-count {
+  font-size: 14px;
+  color: #6b7280;
+  background: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.dmrr-table-empty {
+  padding: 48px;
+  text-align: center;
+}
+
+.dmrr-table-empty-icon {
+  width: 48px;
+  height: 48px;
+  color: #9ca3af;
+  margin: 0 auto 16px;
+}
+
+.dmrr-table-empty-title {
+  color: #6b7280;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.dmrr-table-empty-subtitle {
+  color: #9ca3af;
+  font-size: 14px;
+  margin: 0;
+}
+
+.dmrr-table-wrapper {
+  overflow-x: auto;
+}
+
+.dmrr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dmrr-table-head {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dmrr-table-head th {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.dmrr-table-body {
+  background: white;
+}
+
+.dmrr-table-row {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.dmrr-table-row:hover {
+  background: #f9fafb;
+}
+
+.dmrr-table-row td{
+  text-align: left;
+  padding: 16px 24px;
+}
+.dmrr-table-cell {
+  padding: 16px 24px;
+  vertical-align: top;
+text-align: left;
+}
+
+.dmrr-table-part-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.dmrr-table-part-number {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.dmrr-table-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dmrr-table-po-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dmrr-table-po-number {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.dmrr-table-vendor {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+.dmrr-table-quantity {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.dmrr-table-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dmrr-table-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+.dmrr-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.dmrr-badge.category-component {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.dmrr-badge.category-general {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.dmrr-badge.category-rnd {
+  background: #e9d5ff;
+  color: #6b21a8;
+}
+
+.dmrr-badge.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.dmrr-badge.status-failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.dmrr-badge.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+
+.dmrr-status-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.dmrr-status-icon.completed {
+  color: #059669;
+}
+
+.dmrr-status-icon.failed {
+  color: #dc2626;
+}
+
+.dmrr-status-icon.pending {
+  color: #d97706;
+}
+
+
+.dmrr-category-name{
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.status-badge.accepted {
+  background-color: #d1fae5; 
+  color: #065f46;           
+}
+
+.status-badge.rejected {
+  background-color: #fee2e2; 
+  color: #991b1b;            
+}
+
+.status-badge.pending {
+  background-color: #fef3c7; 
+  color: #92400e;            
+}
+
+.status-badge.unknown {
+  background-color: #e5e7eb; 
+  color: #374151;
+}
+
+.inspection-status {
+  display: flex;
+  gap: 12px; 
+  align-items: center;
+}
+
+.status-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-input {
+  width: 70px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.accepted-input {
+  border-color: green;
+}
+
+.rejected-input {
+  border-color: red;
+}
+
+.input-error {
+  border-color: crimson;
+  background: #ffe6e6;
+}
+
+.dmrr-submit-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; 
+  
+  text-align: center;     
+  width: 100%;
+}
+
+.dmrr-submit-btn {
+  padding: 8px 16px;
+  background: #4450A2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.dmrr-submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.validation-error {
+  margin-top: 8px;
+  color: crimson;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.empty-accepted {
+  border-color: green;
+}
+
+.empty-rejected {
+  border-color: red;
+}
+
+.status-input:disabled {
+  border-color: #ccc;
+  background-color: #f9fafb; 
+}
+
+.dmrr-filter-container {
+  background: linear-gradient(145deg, #ffffff, #f1f3f8);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e6ee;
+}
+
+.dmrr-filter-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.dmrr-filter-container h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.dmrr-filter-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.dmrr-filter-fields > div {
+  flex: 1;
+  min-width: 180px;
+}
+
+.dmrr-filter-fields label {
+  font-size: 14px;
+  color: black;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.dmrr-filter-fields input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccd2e3;
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.dmrr-filter-fields input:focus {
+  border-color: #4450a2;
+  box-shadow: 0 0 0 3px rgba(68, 80, 162, 0.15);
+  outline: none;
+}
+
+.dmrr-filter-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.dmrr-filter-buttons button {
+  background: #4450a2;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dmrr-filter-buttons button:hover {
+  background: #2f3b90;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(47, 59, 144, 0.3);
+}
+
+.dmrr-filter-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dmrr-filter-buttons button:last-child {
+  background: #d1d5db;
+  color: #333;
+}
+
+.dmrr-filter-buttons button:last-child:hover {
+  background: #b7bcc4;
+}
+
+
+.dmrr-filter-fields select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccd2e3;
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  color: #111827;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+.dmrr-filter-fields select:focus {
+  border-color: #4450a2;
+  box-shadow: 0 0 0 3px rgba(68, 80, 162, 0.15);
+  outline: none;
+}
+
+.dmrr-filter-fields input[type="date"],
+.dmrr-filter-fields input[type="month"],
+.dmrr-filter-fields input[type="number"] {
+  color: #111827;
+  background-color: #fff;
+  border: 1px solid #ccd2e3;
+  border-radius: 10px;
+  padding: 10px 12px;
+  width: 100%;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.dmrr-filter-fields input[type="date"]:focus,
+.dmrr-filter-fields input[type="month"]:focus,
+.dmrr-filter-fields input[type="number"]:focus {
+  border-color: #4450a2;
+  box-shadow: 0 0 0 3px rgba(68, 80, 162, 0.15);
+}
+
+.dmrr-range-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dmrr-range-group span {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dmrr-filter-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dmrr-filter-buttons .apply-btn {
+  background: #4450a2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dmrr-filter-buttons .apply-btn:hover {
+  background: #2f3b90;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(47, 59, 144, 0.3);
+}
+
+.dmrr-filter-buttons .reset-btn {
+  background: #e5e7eb;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dmrr-filter-buttons .reset-btn:hover {
+  background: #d1d5db;
+}
+
+
+@media (max-width: 768px) {
+  .dmrr-filter-fields {
+    flex-direction: column;
+  }
+
+  .dmrr-filter-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dmrr-filter-buttons button {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dmrr-table-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .dmrr-table-head th {
+    padding: 12px 16px;
+    font-size: 11px;
+  }
+  
+  .dmrr-table-cell {
+    padding: 12px 16px;
+  }
+  
+  .dmrr-table-description {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dmrr-table-wrapper {
+    font-size: 14px;
+  }
+  
+  .dmrr-table-head th {
+    padding: 8px 12px;
+  }
+  
+  .dmrr-table-cell {
+    padding: 8px 12px;
+  }
+}
+

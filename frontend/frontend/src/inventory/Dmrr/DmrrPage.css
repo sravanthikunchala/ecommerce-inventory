@@ -1,0 +1,278 @@
+
+.dmrr-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto; 
+  padding: 10px 16px; 
+}
+
+.dmrr-header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dmrr-header-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dmrr-title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dmrr-icon-container {
+  padding: 8px;
+  background: #4450A2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dmrr-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.dmrr-subtitle {
+  color: #6b7280;
+  margin: 8px 0 0 0;
+  font-size: 16px;
+}
+
+.dmrr-date-section {
+  text-align: right;
+}
+
+.dmrr-date-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.dmrr-date-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 4px 0 0 0;
+}
+
+.dmrr-main-content {
+ 
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+
+.dmrr-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+  margin-top: 30px;
+}
+
+.dmrr-stat-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.dmrr-stat-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dmrr-stat-content {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dmrr-stat-text h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0 0 4px 0;
+}
+
+.dmrr-stat-text p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.dmrr-stat-icon {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dmrr-stat-icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.dmrr-stat-icon.amber {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.dmrr-stat-icon.emerald {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.dmrr-stat-icon.purple {
+  background: #e9d5ff;
+  color: #7c3aed;
+}
+
+.dmrr-stat-bar {
+  height: 8px;
+}
+
+.dmrr-stat-bar.blue {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+.dmrr-stat-bar.amber {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.dmrr-stat-bar.emerald {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.dmrr-stat-bar.purple {
+  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+}
+
+.dmrr-content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dmrr-footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.dmrr-footer-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+}
+
+.dmrr-footer-text {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.dmrr-footer-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  
+  .dmrr-header-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .dmrr-date-section {
+    text-align: center;
+  }
+  
+  .dmrr-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dmrr-footer-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.roles-page-body {
+  display: flex;
+  margin-top: 80px; 
+  height: calc(100vh - 60px);
+}
+
+.roles-sidebar {
+  width: 250px;
+  position: fixed; 
+  top: 60px; 
+  left: 0;
+  height: calc(100vh - 60px);
+}
+
+.roles-main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 250px;
+}
+.stockpage-roles-main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 20px;
+}
+
+.bom-dmrr-container{
+  max-width: 1550px;
+  min-height: 100vh;
+  min-height: 100vh; 
+  padding: 10px 16px; 
+}
+
+
+@media (max-width: 1440px) {
+  .dmrr-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .bom-dmrr-container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .bom-dmrr-container {
+    width: 100%;
+  }
+  .stockpage-roles-main-content {
+  flex: 1;
+
+}
+
+}
